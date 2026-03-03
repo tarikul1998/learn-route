@@ -1,16 +1,14 @@
-import Navbar from "../components/Navbar";
 import { Outlet } from "react-router";
+import Nav from "../components/Nav";
 
 const RootLayout = () => {
     return (
         <>
             <div id="sidebar">
-                <Navbar />
+                <Nav />
             </div>
             <div id="detail">
                 <Outlet />
-                {/* <Home /> */}
-                {/* <About /> */}
             </div>
         </>
     );
@@ -18,13 +16,17 @@ const RootLayout = () => {
 
 export default RootLayout;
 
-/*
-Outlet is a placeholder in React
 
-function add(a, b) {
-    return a + b;
-}
+// RootLayout er ki aage theke jana sombhob User kon path e ase ?
+// Mane ei Layout (Nav) sharing badeo, Kokhon take Home/about dekhaite hobe, inside this component
+// Tai React special component Outlet use korbo
+// Outlet is a placeholder component (It's just a parameter)
 
-add(10, 20);
-add(30, 50);
-*/
+
+// function add(a, b) {
+//     return a + b;
+// }
+
+// add(10, 20);
+// add(30, 50);
+
