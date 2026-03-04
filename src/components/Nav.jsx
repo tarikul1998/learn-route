@@ -6,8 +6,15 @@ const Nav = () => {
             <ul>
                 <li>
                     <NavLink to="/">Home</NavLink>
+                </li>
+                <li>
                     <NavLink to="/about">About</NavLink>
+                </li>
+                <li>
                     <NavLink to="/team">Team</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/post-list">PostList</NavLink>
                 </li>
             </ul>
         </nav>
@@ -16,6 +23,3 @@ const Nav = () => {
 
 export default Nav;
 
-// Navbar ekta shared layout, Jeita sob page e dekhaite hobe
-// So ei layout ta share korar jonno Outlet diye
-// Tokhon Home,About,Team page er moddhe Navbar alada kore call kora lagbe nah
